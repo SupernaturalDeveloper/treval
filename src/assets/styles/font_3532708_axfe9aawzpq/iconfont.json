@@ -1,0 +1,16 @@
+{
+  "id": "3532708",
+  "name": "travel",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29957937",
+      "name": "房屋认证",
+      "font_class": "fangwurenzheng",
+      "unicode": "100d7",
+      "unicode_decimal": 65751
+    }
+  ]
+}

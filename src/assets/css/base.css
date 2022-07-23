@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: '微软雅黑';
+}
+
+input {
+  outline: none;
+}
+
+html {
+  font-size: 13.3333vw;
+  padding-bottom: 49px;
+}
+
+@media screen and (min-width:750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+body {
+  max-width: 750px;
+  font-size: 14px;
+  margin: 0 auto;
+}
