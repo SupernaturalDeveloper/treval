@@ -15,7 +15,7 @@
         name: "HeaderCpn",
         computed: {
             cityName() {
-                return this.$route.query.name;
+                return this.$store.state.homeCityName.name;
             },
         },
     };

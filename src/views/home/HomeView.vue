@@ -38,7 +38,7 @@
         mounted() {
             document.documentElement.scrollTop = 0;
             this.$axios.get("/static/mock/index.json").then(res => {
-                console.log(res);
+                // console.log(res);
                 this.swiperList = res.data.data.swiperList;
                 this.recommendList = res.data.data.recommendList;
                 this.weekendList = res.data.data.weekendList;
@@ -46,11 +46,11 @@
 
             setTimeout(() => {
                 this.$LazyLoading.init(".laz", "src");
-                console.log(document.querySelectorAll(".laz"));
+                // console.log(document.querySelectorAll(".laz"));
             }, 1000);
-            if (!this.$route.query.name) {
-                this.$router.push("/home?name=北京");
-            }
+            // if (!this.$route.query.name) {
+            //     this.$router.push("/home?name=北京");
+            // }
         },
         data() {
             return {

@@ -50,7 +50,15 @@
         },
         methods: {
             toHome(id, name) {
-                this.$router.replace(`/home?id=${id}&name=${name}`);
+                this.$store.dispatch({
+                    type: "changeHomeCityName",
+                    params: {
+                        id,
+                        name,
+                    },
+                });
+                this.$router.push("/");
+                // this.$router.replace(`/home?id=${id}&name=${name}`);
             },
         },
     };

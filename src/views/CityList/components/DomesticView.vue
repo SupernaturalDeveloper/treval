@@ -35,7 +35,7 @@
             const _this = this;
             this.$axios.get("/static/mock/city.json").then(res => {
                 _this.citiesData = res.data.data;
-                console.log(res);
+                // console.log(res);
             });
         },
 

@@ -21,7 +21,10 @@ const routes = [{
 },
 {
 	path: '/home',
-	component: Home
+	component: Home,
+	beforeEnter: (to, from, next) => {
+		console.log(to, from, next())
+	}
 },
 {
 	path: '/category',
