@@ -10,7 +10,7 @@ const Home = () => import('@/views/home/HomeView')
 const Category = () => import('@/views/category/CategoryView')
 const Cart = () => import('@/views/cart/CartView')
 const Main = () => import('@/views/main/MainView')
-// const Details = () => import("@/views/views/Details/DetailsView")
+const Details = () => import("@/views/Details/DetailsView")
 // const Hotel = () => import("@/components/")
 const CityList = () => import("@/views/CityList/CityList.vue")
 const DomesticView = () => import("@/views/CityList/components/DomesticView")
@@ -25,6 +25,11 @@ const routes = [{
 	beforeEnter: (to, from, next) => {
 		console.log(to, from, next())
 	}
+},
+{
+	path: "/detail",
+	name: "detail",
+	component: Details
 },
 {
 	path: '/category',

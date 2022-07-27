@@ -6,7 +6,11 @@
         </div>
         <div class="HotList-bottom">
             <ul>
-                <li v-for="item in recommendList" :key="item.id">
+                <li
+                    @click="toDetail(index)"
+                    v-for="(item, index) in recommendList"
+                    :key="item.id"
+                >
                     <img class="laz" :data-src="item.imgUrl" alt="" />
                     <p>{{ item.title }}</p>
                     <div>￥613.0起</div>
@@ -21,6 +25,11 @@
         name: "HotList",
         props: ["recommendList"],
         mounted() {},
+        methods: {
+            toDetail(index) {
+                this.$router.push({ name: "detail", params: { id: index } });
+            },
+        },
     };
 </script>
 
